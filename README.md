@@ -8,6 +8,26 @@ Configurable grayscale effect for KWin window manager and KDE desktop environmen
 
 # Installation
 
+## KDE 4
+
+1. [Download](https://github.com/murat-cileli/kwin-grayscale-effect/archive/master.zip)
+
+2. Copy "kwin4_effect_grayscale" folder to "/usr/share/apps/kwin/effects/", using:
+```{.bash}
+cp -r kwin4_effect_grayscale/ /usr/share/apps/kwin/effects/
+```
+3. Copy "kwin4_effect_grayscale.desktop" to "/usr/share/kde4/services/kwin/", using:
+```{.bash}
+cp kwin4_effect_grayscale.desktop /usr/share/kde4/services/kwin/
+```
+4. Add "kwin4_effect_grayscaleEnabled=true" to "[Plugins]" section in "~/.kde/share/config/kwinrc" (as a normal user).
+
+5. Reboot.
+
+6. Open System Settings > Desktop Behavior. In there, open Desktop Effects. You should see Grayscale in the Appearance section. Toggle it a couple of times, and you'll see the grayscale effect at work. Press Alt + shift + F12 to reload effect.
+
+## KDE 5
+
 1. [Download](https://github.com/murat-cileli/kwin-grayscale-effect/archive/master.zip) or Git Pull
 2. Copy "kwin4_effect_grayscale" folder to "/usr/share/kwin/effects", using e.g.
 ```{.bash}
